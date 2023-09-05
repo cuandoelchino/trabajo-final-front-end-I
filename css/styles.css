@@ -206,6 +206,17 @@ footer {
     padding-top: 10px;
 }
 
+.footer-nav a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-nav a:hover {
+    text-decoration: none;
+    color: inherit;
+    background-color: rgba(139, 72, 191, 1);;
+}
+
 .footer-icons {
     display: flex;
     padding: 5px;
@@ -245,6 +256,12 @@ footer {
 
 
 @media (min-width: 700px) {
+
+    /* MEDIAS HOVER */
+    button:hover {
+        cursor: url(../img/fa_hand-pointer-o.svg), pointer;
+        background: rgba(139, 72, 191, 0.7);
+    }
 
     /* MEDIAS TESTIMONIOS */
     #sanyo, #navarro {
@@ -289,8 +306,7 @@ footer {
         position: relative;
         justify-content: space-around;
         align-items: flex-start;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 70px 100px;
     }
 
     footer :nth-child(1) { order: 3; }
@@ -302,6 +318,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        min-width: 25vw
     }
 
     .footer-icons {
@@ -319,19 +336,25 @@ footer {
     .footer-buscador {
         margin-top: 0;
         padding-top: 0;
+        min-width: 25vw;
         width: fit-content;
     }
 
     .footer-nav {
         margin-top: 0;
         padding-top: 0;
+        min-width: 25vw;
         flex-direction: row-reverse;
     }
 
-    .footer-derechos {
-        position: absolute;
-        bottom: 30px;
-        right: 70px;
+    .footer-derechos, .footer-derechos p {
+        min-width: 100vw;
+        padding-right: 100px;
+        margin: 0;
+    }
+
+    .footer-derechos p {
+        text-align: end;
     }
 
 }
